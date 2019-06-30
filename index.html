@@ -101,7 +101,25 @@
       text-align: center;
     }
 
+    .arrow-continue {
+      display: block;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    @media only screen and (min-width: 767px),
+    only screen and (min-height: 751px) {
+      .arrow-continue {
+        display: none;
+      }
+    }
+
     @media only screen and (max-width: 420px) and (max-height: 750px) {
+
       .top-left,
       .top-right,
       .bot-left,
@@ -162,6 +180,7 @@
         <a href="https://www.linkedin.com/in/alexsays" target="_blank"><i class="fa fa-linkedin"></i></a>
         <a href="mailto:alex@alexsilva.codes" target="_blank"><i class="fa fa-envelope"></i></a>
       </p>
+      <i class="fa fa-angle-double-down arrow-continue"></i>
     </div>
     <div class="top-right">
       <h1>Education 📖</h1>
