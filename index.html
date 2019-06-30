@@ -1,193 +1,222 @@
 <!DOCTYPE html>
 <html>
-<title>Alexsays Developer 📱</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  background: url("images/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body, h1,h2,h3,h4,h5,h6 {font-family: "Delicious-Roman", sans-serif}
-.w3-wide {font-family: "FiraMono-Regular"}
-.w3-image {
-  border-radius: 50%;
-  border: 5px solid rgba(0, 0, 0, 0.5);
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-}
-.dark-container {
-  background-color: rgba(0, 0, 0, 0.85);
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px; background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-@font-face {
-  font-family: "Delicious-Roman";
-  src: url('resources/Delicious-Roman.otf');
-}
-@font-face {
-  font-family: "FiraMono-Regular";
-  src: url('resources/FiraMono-Regular.otf');
-}
-</style>
-<body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <p class="w3-xxlarge">< / ></p>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT ME</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+<head>
+  <meta content="Alex Silva">
+  <meta charset="utf-8">
+  <title>Alex Silva</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      transition: 1s all;
+      margin: 0 auto;
+      color: #bcbcbc;
+      background: #17191A;
+    }
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+    h1 {
+      font-family: 'Delicious-Roman', sans-serif;
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 5%;
+    }
 
-<!-- Page Content -->
-<div class="w3-padding-large dark-container" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Alex Silva.</h1>
-    <p>iOS Developer.</p>
-    <img src="images/boy.jpg" alt="boy" class="w3-image" width="200" height="459">
-  </header>
+    p {
+      font-family: 'Avenir Next', sans-serif;
+      font-weight: 600;
+      font-size: 1.2em;
+      margin: 5% auto;
+    }
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">I will introduce myself 👇</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>My full name is Alejandro Silva Fernández, I was born on a warm sunny October 21st of 1989 in Vigo (Spain). I'm a software engineer specialized in iOS developing 👨🏽‍💻 with more than 5 years experience in that field. I love to learn to work with new technologies, not just software related, but I also enjoy videogames 🕹, photography 📸, traveling 🛫, good food 🥗 and of course sun ☀️, without it there will be no fun!</p>
+    a {
+      color: #707070;
+      text-decoration: none;
+    }
 
-    <p>If you want you can take a look at some of my finished/WIP projects <a href="https://github.com/Alexsays?tab=repositories" target="_blank"><i class="fa fa-github w3-xlarge w3-hover-opacity"></i></a> or maybe you want to take a look at my <a href="https://www.linkedin.com/in/alexsays" target="_blank"><i class="fa fa-linkedin w3-xlarge w3-hover-opacity"></i></a> page.</p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills 💪</h3>
-    <p class="w3-wide">React</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:55%"></div>
-    </div>
-    <p class="w3-wide">NodeJS</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:55%"></div>
-    </div>
-    <p class="w3-wide">C++</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-    </div>
-    <p class="w3-wide">Android (Java, willing to learn Kotlin!)</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-    </div>
-    <p class="w3-wide">Firebase platform</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">Python</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-    <p class="w3-wide">Objective - C</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Swift</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
+    .main {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-    <h3 class="w3-padding-16 w3-text-light-grey">My numbers 🔢</h3>
+    .top-left,
+    .top-right,
+    .bot-left,
+    .bot-right {
+      width: 50%;
+      height: 50%;
+      margin: auto;
+      padding: 5% 0%;
+    }
 
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <i class="fa fa-tasks"></i>
-        <span class="w3-xlarge">15+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <i class="fa fa-users"></i>
-        <span class="w3-xlarge">50+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <i class="fa fa-rebel"></i>
-        <span class="w3-xlarge">1000+</span><br>
-        Hours Developing
-      </div>
-      <div class="w3-quarter w3-section">
-        <i class="fa fa-coffee"></i>
-        <span class="w3-xlarge">2000+</span><br>
-        Coffees
-      </div>
-    </div>
+    .top-left,
+    .bot-right {
+      background-color: #424242;
+    }
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href="https://github.com/Alexsays/alexsays.github.io/raw/master/resources/Resume.pdf" target="_blank"><i class="fa fa-download"></i> Download Resume</a>
-    </button>
-  </div>
+    .top-right,
+    .bot-left {
+      background-color: #1b1b1b;
+    }
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    .fa {
+      display: inline-block;
+      font: normal normal normal 15px/1 FontAwesome;
+      font-size: 2.5em;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Santa Cruz de Tenerife, Spain</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: alex@alexsilva.codes</p>
-      <br>
-      <p class="w3-padding-small w3-large w3-text-white">Social Networks:</p>
-      <p>
-        <a href="https://github.com/Alexsays?tab=repositories" target="_blank"><i class="fa fa-github w3-text-grey w3-xxlarge w3-hover-opacity"></i></a>
-        <a href="https://twitter.com/alexw0h4l" target="_blank"><i class="fa fa-twitter w3-text-grey w3-xxlarge w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/alexsays" target="_blank"><i class="fa fa-linkedin w3-text-grey w3-xxlarge w3-hover-opacity"></i></a>
+    .paragraphs {
+      text-align: justify;
+      line-height: 1.5em;
+      padding: 1% 5%;
+    }
+
+    .top-left a {
+      margin: 0 5%;
+    }
+
+    .bot-left .paragraphs {
+      margin: 1% auto;
+    }
+
+    .bot-left .subtitle {
+      margin-left: 2%;
+    }
+
+    span.subtitle {
+      font-size: 0.8em;
+      color: #5e5e5e;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+      p {
+        font-size: 1em;
+      }
+
+      .main {
+        display: inherit;
+        flex-wrap: nowrap;
+      }
+
+      .top-left,
+      .bot-left {
+        background-color: #424242;
+      }
+
+      .top-right,
+      .bot-right {
+        background-color: #1b1b1b;
+      }
+
+      .top-left,
+      .top-right,
+      .bot-left,
+      .bot-right {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+
+<body class="body" id="boo">
+  <div class="main">
+    <div class="top-left">
+      <h1>About me 🧔🏻</h1>
+      <p class="paragraphs">
+        Hi! My full name is Alejandro Silva Fernández, I'm a software engineer specialized in iOS
+        development with more than 5 years experience.
       </p>
-    </div><br>
-    <p>Lets get in touch. Send me a message:</p>
-
-    <form action="mailto:alex@alexsilva.codes" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
+      <p class="paragraphs">
+        If you want you can download my updated <a href="resources/Resume.pdf">Resume</a>
       </p>
-    </form>
-  <!-- End Contact Section -->
+      <br><br>
+      <h1>Reach me 📬</h1>
+      <p class="paragraphs center">
+        <a href="https://github.com/Alexsays?tab=repositories" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/alexw0h4l" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/alexsays" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:alex@alexsilva.codes" target="_blank"><i class="fa fa-envelope"></i></a>
+      </p>
+    </div>
+    <div class="top-right">
+      <h1>Education 📖</h1>
+      <p class="paragraphs">
+        Application Development - Technician (2007-2009)
+        <br><span class="subtitle">🏫 CFP Daniel Castelao</span>
+        <br><span class="subtitle">🌍 Vigo, Spain</span>
+      </p>
+      <p class="paragraphs">
+        Software Engineer - Bachelor Degree (2009-2014)
+        <br><span class="subtitle">🏫 Universidade de Vigo</span>
+        <br><span class="subtitle">🌍 Ourense, Spain</span>
+      </p>
+      <p class="paragraphs">
+        Scrum Master by Scrum Manager (2019)
+        <br><span class="subtitle">🌍 Tenerife, Spain</span>
+      </p>
+    </div>
+    <div class="bot-left">
+      <h1>Experience 💻</h1>
+      <p class="paragraphs">
+        <b>Full Stack Developer (Current job)</b>
+        <span class="subtitle"><a href="https://sedicii.com/" target="_blank"> ⚙️ Sedicii</a></span>
+        <span class="subtitle"> 🌍 Tenerife, Spain</span>
+      </p>
+      <p class="paragraphs">
+        <b>Senior iOS Developer (2019)</b>
+        <span class="subtitle"><a href="https://edosoft.es/" target="_blank"> ⚙️ Edosoft</a></span>
+        <span class="subtitle"> 🌍 Tenerife, Spain</span>
+      </p>
+      <p class="paragraphs">
+        <b>Senior iOS Developer (2017-2018)</b>
+        <span class="subtitle">⚙️ Party Play</a></span>
+        <span class="subtitle"> 🌍 Tenerife, Spain</span>
+      </p>
+      <p class="paragraphs">
+        <b>UI/UX Engineer / iOS Developer (2017)</b>
+        <span class="subtitle"><a href="https://massive.co/" target="_blank"> ⚙️ Massive Interactive</a></span>
+        <span class="subtitle"> 🌍 Prague, Czechia</span>
+      </p>
+      <p class="paragraphs">
+        <b>iOS Developer (2014-2017)</b>
+        <span class="subtitle"><a href="https://www.redegal.com/es/" target="_blank"> ⚙️ Redegal</a></span>
+        <span class="subtitle"> 🌍 Vigo, Spain</span>
+      </p>
+      <p class="paragraphs">
+        <b>Junior iOS Developer (2013)</b>
+        <span class="subtitle"> ⚙️ Ziblec Software</span>
+        <span class="subtitle"> 🌍 Ourense, Spain</span>
+      </p>
+    </div>
+    <div class="bot-right">
+      <h1>Skills 💪🏼</h1>
+      <p class="paragraphs">
+        Fluent in written & spoken English.
+      </p>
+      <p class="paragraphs">
+        Highly adaptable team player.
+      </p>
+      <p class="paragraphs">
+        Professional experience as Full Stack developer: Python, Ruby, React, Node.js, Typescript, Android (Java), etc.
+      </p>
+      <p class="paragraphs">
+        Always willing to learn new stuff.
+      </p>
+    </div>
   </div>
-
-<!-- END PAGE CONTENT -->
-</div>
-
 </body>
+
 </html>
