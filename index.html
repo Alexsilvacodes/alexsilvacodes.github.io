@@ -11,18 +11,54 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
-      html { padding: 0; }
+      html { 
+        padding: 0;
+        min-width: 100%;
+      }
       body {
         margin: 0;
         background-color: rgb(222, 171, 99);
+        overflow-x: hidden;
       }
       a { color: inherit; } 
       @media only screen and (max-device-width: 767px) {
-        svg { height: 100%; }
+        svg {
+          height: 100%;
+          overflow-x: auto;
+        }
       }
       @media only screen and (min-device-width: 768px) {
-        svg { width: 100%; }
+        svg {
+          width: 100%;
+          overflow-x: auto;
+        }
       }
+      /* Safari 11+ */
+      @media not all and (min-resolution:.001dpcm)
+      { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        svg {
+          width: 2560px;
+          height: 1698px;
+        }
+      }}
+
+      /* Safari 10.1 */
+      @media not all and (min-resolution:.001dpcm){ 
+      @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+        svg {
+          width: 2560px;
+          height: 1698px;
+        }
+      }}
+
+      /* Safari 6.1-10.0 (but not 10.1) */
+      @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){ 
+      @media {
+        svg {
+          width: 2560px;
+          height: 1698px;
+        }
+      }}
     </style>
   </head>
   <body>
